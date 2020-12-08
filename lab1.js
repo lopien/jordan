@@ -1,3 +1,4 @@
+// Матрица
 function matr(array) {
   document.getElementById('matrix').innerHTML = '';
   var table = document.createDocumentFragment();
@@ -41,7 +42,7 @@ function matr(array) {
   }
   document.getElementById('matrix').appendChild(table);
 }
-
+// Заполнить матрицу значениями
 function getInput(tag,array_item){
   var input = document.createElement('input');
   input.type = "number";
@@ -52,13 +53,13 @@ function getInput(tag,array_item){
   }
   tag.appendChild(input);
 }
-
+// Рандомные числа в матрице
 function getRandom(){
    var min = -10;
    var max = 10;
    return Math.floor(Math.random()*(max-min))+min;
 }
-
+// Удалить строку
 function delRow(){
   var matr = document.getElementById('matrix');
   var size = matr.getElementsByTagName('tr').length - 1;
@@ -67,6 +68,7 @@ function delRow(){
   }
 }
 
+// Удалить столбец
 function delCell(){
   var matr = document.getElementById('matrix');
   var sizeRow = matr.getElementsByTagName('tr').length;
@@ -77,6 +79,7 @@ function delCell(){
   }
 }
 
+// Добавить строку
 function addRow(){
   var table = document.getElementById('matrix');
   var tr = table.querySelectorAll('tr');
@@ -91,7 +94,7 @@ function addRow(){
 		getInput(cell);
   }
 }
-
+// Добавить столбец
 function addCell(){
   var table = document.getElementById('matrix');
   var tr = table.querySelectorAll('tr');
@@ -109,7 +112,7 @@ function addCell(){
     tr[i].appendChild(newCell); 
   }
 }
-
+// таблица матрицы
 function tableMatrix(){
   var table = document.getElementById('matrix');
   var th = table.querySelectorAll('th');
