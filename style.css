@@ -1,17 +1,14 @@
-div{
-}
-
 table {
   border-collapse: collapse;
   width: 300px;
 }
 th, #Y { 
 	height: 30px;
-  background: #e3e3e3;
+  background: #fff;
 }
 
 #ae {
-	background: #aa1;
+	background: #fff;
 }
 
 td {
@@ -58,7 +55,7 @@ table
 
 .button {
 	float: left;
-	background: #e3e3e3;
+	background: #fff;
 	border: 1px solid black ;
 	border-radius: 3px;
 }
@@ -68,13 +65,26 @@ table
 }
 
 .cell{
+	white-space:normal;
 	height: 49%;
+	width: 70px;
 }
 
 .enter{
-	height: 99%;
-	width: 99%;
+	float: right;
+	height: 50%;
+	width: 30%;
 }
 
 .ex{
 	height: 33%;}
+.inputRow{
+	width: 30%;
+	height: 50%;
+	border: 1px solid #000;
+}
+.inputCell{
+	border: 1px solid #000;
+	width: 30%;
+	height: 50%;
+}
